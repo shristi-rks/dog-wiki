@@ -4,6 +4,17 @@ document.addEventListener('DOMContentLoaded', () => {
     function createWikiItem(breed, imageUrl){
         const wikiItem = document.createElement('div');
         wikiItem.className = 'wiki-item';
+
+        const header = document.createElement('h1');
+        header.className = 'wiki-header';
+        header.textContent = breed;
+
+        const content = document.createElement('div')
+        content.className = document.createElement('wiki-content');
+
+        const para = document.createElement('p');
+        para.className = 'wiki-text';
+        para.textContent = "information about the breed"
         
         const imgContainer = document.createElement('div');
         imgContainer.className = 'img-container';
@@ -13,9 +24,14 @@ document.addEventListener('DOMContentLoaded', () => {
         img.src = imageUrl;
         img.alt = breed;
 
+        content.appendChild(para);
+        content.appendChild(imgContainer);
         imgContainer.appendChild(img);
+        wikiItem.appendChild(header);
+        wikiItem.appendChild(content)
+        
         console.log(wikiItem)
-        return img;
+        return wikiItem;
     }
 
     async function fetchDogImage(breed) {
@@ -34,8 +50,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const breeds = ['hound', 'bulldog', 'poodle', 'beagle', 'dalmatian'];
         for (const breed of breeds) {
           const imageUrl = await fetchDogImage(breed);
-          const wikiItem = createWikiItem(breed, imageUrl);
-          container.appendChild(wikiItem);
+          const item = createWikiItem(breed, imageUrl);
+          container.appendChild(item);
+          console.log(item)
         }
       }
     

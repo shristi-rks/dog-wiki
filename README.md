@@ -20,3 +20,6 @@ make it look better on mobile screens
 To get used to fetching and using APIs, the text should be fetched from wikipedia. Use Wikipedias API to get the summary for every breed page (/page/summary/{title}). Use the value from the extract key as the text. 
 
 API: https://en.wikipedia.org/api/rest_v1/
+
+
+Resources used: W3school, ChatGpt, mdn web docs
