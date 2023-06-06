@@ -21,5 +21,16 @@ To get used to fetching and using APIs, the text should be fetched from wikipedi
 
 API: https://en.wikipedia.org/api/rest_v1/
 
+    <!--template <div class="wiki-item" >
+        <h1 class="wiki-header">Breed X</h1>
+        <div class="wiki-content">
+           <p class="wiki-text">
+           </p>
+           <div class="img-container">
+             <img class="wiki-img">
+           </div>
+        </div>
+      </div>
+    </div>-->
 
 Resources used: W3school, ChatGpt, mdn web docs
