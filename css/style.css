@@ -6,30 +6,44 @@
     margin: 0 10px;
     padding: 0 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    background-color: bisque;
   }
-  
+
+  .wiki-header{
+    text-align: center;
+    text-transform: capitalize;
+  }
+
   .wiki-content {
     padding: 10px;
   }
   
+  .wiki-header{
+    padding-top: 10px;
+  }
 
-  @media screen and (min-width: 600px) {
-    .wiki-content {
-      display: flex;
-      flex-direction: row-reverse;
-    }
-  
+  @media screen and (min-width: 600px) {  
     .wiki-text,
     .img-container {
       min-width: 50%;
-      max-width: 50%;
-    }
+      max-width: 50%;  
   }
+
+  .wiki-content{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .wiki-text {
+    margin-right: 10px;
+  }
+}
   
   .container {
     max-width: 960px;
-    margin: 0 auto;
+    margin: 0 auto; 
+    font-family: Georgia, 'Times New Roman', Times, serif;  
   }
-  
+
 
   

@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         header.textContent = breed;
 
         const content = document.createElement('div')
-        content.className = document.createElement('wiki-content');
+        content.classList.add('wiki-content'); /*to resolve the error of getting a div with class name [object HTML element]*/
 
         const para = document.createElement('p');
         para.className = 'wiki-text';

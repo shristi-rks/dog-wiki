@@ -34,3 +34,5 @@ API: https://en.wikipedia.org/api/rest_v1/
     </div>-->
 
 Resources used: W3school, ChatGpt, mdn web docs
+
+Note: When creating content div using className I was getting a div with class name [object HTML element], therefore I used classList to solve the error.
