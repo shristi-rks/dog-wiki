@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
         wikiItem.appendChild(header);
         wikiItem.appendChild(content)
         
-        console.log(wikiItem)
         return wikiItem;
     }
 
@@ -65,7 +64,6 @@ document.addEventListener('DOMContentLoaded', () => {
           const imageUrl = await fetchDogImage(breed);
           const item = createWikiItem(breed, wikiText, imageUrl);
           container.appendChild(item);
-          console.log(item)
         }
       }
     

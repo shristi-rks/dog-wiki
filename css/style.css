@@ -31,11 +31,11 @@
 
   .wiki-content{
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
   }
 
   .wiki-text {
-    margin-right: 10px;
+    margin-left: 10px;
   }
 }
   
